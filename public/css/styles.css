@@ -12,10 +12,14 @@ body{
 
 /*====== Header ======*/
 
-
+.main-header-top-bar, .main-navbar{
+    max-width: 1200px;
+}
 .main-header {
     background-color: #EAC926;
     padding: 20px;
+    width: 100vw;
+    margin: auto;
 }
 
 .hamburger-button {
@@ -262,7 +266,7 @@ h3,
 }
 
 section.banner img{
-    width: 100%;
+    width: 100vw;
 }
 
 main{
