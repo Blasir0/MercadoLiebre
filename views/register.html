@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Bienvenidos a MercadoLiebre</title>
         <link rel="icon" href="/images/mercadoliebrelogosolo.jpg">
+        </a>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,7 +14,9 @@
     <body>
         <header class="main-header">
             <div class="main-header-top-bar">
-                   <img src="images/logo-mercado-liebre.svg" class="logo"> 
+                <a class="logo" href="/">
+                   <img src="images/logo-mercado-liebre.svg"> 
+                </a>
             <div class="searchbar" action="#" method="GET">
                 <input class="input" placeholder="Buscar productos, marcas y más">
                     <div class="submit"><i class="fa fa-search"></i></div>
@@ -46,34 +49,34 @@
         </header>
         
         <main class="register">
-            <form action="/" method="POST">
+            <form action="/" method>
                 <b>Creá tu cuenta</b>
                 <br>
                 <br>
-                <input type="text" name="name" placeholder="Nombre y apellido" class="button">
+                <input type="text" name="name" placeholder="Nombre y apellido" class="button" required>
                 <br>
                 <br>
-                <input type="text" name="user" placeholder="Nombre de usuario" class="button">
+                <input type="text" name="user" placeholder="Nombre de usuario" class="button" required>
                 <br>
                 <br>
-                <input type="email" name="email" placeholder="E-mail" class="button">
+                <input type="email" name="email" placeholder="E-mail" class="button" required>
                 <br>
                 <br>
                 <label for="birth_date"><b>Fecha de nacimiento</b></label>
                 <br>
                 <br>
-                <input type="date" name="birth_date" id="birth_date" class="button">
+                <input type="date" name="birth_date" id="birth_date" class="button" required>
                 <br>
                 <br>
-                <input type="text" name="addres" placeholder="Domicilio" class="button">
+                <input type="text" name="addres" placeholder="Domicilio" class="button" required>
                 <br>
                 <br>
                 <b>Perfil del usuario</b>
                 <div class="profile">
                     <br>
-                    <input type="radio" name="profile" value="buy" id="buy">
+                    <input type="radio" name="profile" value="buy" id="buy" required>
                     <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
+                    <input type="radio" name="profile" value="sell" id="sell" required>
                     <label for="sell">Vendedor</label>
                 </div>
                 <br>
@@ -112,10 +115,10 @@
                 <input type="file" name="avatar">
                 <br>
                 <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña" class="button">
+                <input type="password" name="pass" placeholder="Elegí tu contraseña" class="button" required>
                 <br>
                 <br>
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña" class="button">
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña" class="button" required>
                 <br>
                 <br>
                 <input type="submit" value="Enviar" class="enviar">
